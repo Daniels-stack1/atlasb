@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Builders | Construcción y Reformas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              atlas: {
+                bg: '#F4F4F4',        // Light Gray Background
+                card: '#FFFFFF',      // White Card Surface
+                text: '#1A1A1A',      // Soft Black Text
+                textLight: '#6B7280', // Secondary Text
+                orange: '#E38536',    // Industrial Orange Accent
+                orangeDark: '#C2712D',
+              }
+            },
+            fontFamily: {
+              heading: ['"Plus Jakarta Sans"', 'sans-serif'],
+              body: ['"Inter"', 'sans-serif'],
+            },
+            borderRadius: {
+              '4xl': '2rem',
+              '5xl': '2.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #F4F4F4;
+        color: #1A1A1A;
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      
+      /* Custom shapes for the "Mason" aesthetic */
+      .clip-chamfer-br {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%);
+      }
+      .clip-chamfer-tl {
+        clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
